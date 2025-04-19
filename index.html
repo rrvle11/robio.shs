@@ -2,16 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Play 1.mp3</title>
+  <title>Play 1.mp4</title>
+  <style>
+    body {
+      background-color: #000;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    video {
+      width: 80%;
+      max-width: 900px;
+      border: 2px solid #0f0;
+      box-shadow: 0 0 20px #0f0;
+    }
+  </style>
 </head>
 <body>
-  <audio id="audioPlayer" src="1.mp3" autoplay controls></audio>
+  <video id="videoPlayer" src="1.mp4" autoplay controls></video>
 
   <script>
-    // Optional: Ensure autoplay works on some browsers
+    // Optional: ensure autoplay works
     window.addEventListener('load', function () {
-      const audio = document.getElementById('audioPlayer');
-      audio.play().catch(err => {
+      const video = document.getElementById('videoPlayer');
+      video.play().catch(err => {
         console.warn('Autoplay failed:', err);
       });
     });
