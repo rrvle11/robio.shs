@@ -6,6 +6,7 @@
   <style>
     body {
       background-color: #000;
+      color: #ff0000; /* Red text */
       margin: 0;
       display: flex;
       justify-content: center;
@@ -15,13 +16,13 @@
     video {
       width: 80%;
       max-width: 900px;
-      border: 2px solid #0f0;
-      box-shadow: 0 0 20px #0f0;
+      border: 2px solid #ff0000; /* Red border */
+      box-shadow: 0 0 20px #ff0000; /* Red glow */
     }
   </style>
 </head>
 <body>
-  <video id="videoPlayer" src="2.mov" autoplay controls></video>
+  <video id="videoPlayer" src="1.mp4" autoplay controls loop></video>
 
   <script>
     // Optional: ensure autoplay works
