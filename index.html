@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Play 1.mp3</title>
+</head>
+<body>
+  <audio id="audioPlayer" src="1.mp3" autoplay controls></audio>
+
+  <script>
+    // Optional: Ensure autoplay works on some browsers
+    window.addEventListener('load', function () {
+      const audio = document.getElementById('audioPlayer');
+      audio.play().catch(err => {
+        console.warn('Autoplay failed:', err);
+      });
+    });
+  </script>
+</body>
+</html>
