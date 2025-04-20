@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from grave.sh/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 20 Apr 2025 18:26:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grave.sh</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="css/loading.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="boot-screen">
+    <div class="scanline"></div>
+    <div class="boot-sequence">
+      <div class="header">
+        <div class="logo">
+          <img src="images/angel.png" alt="GRAVE OS Logo">
+        </div>
+        <div class="version">build_x64_23.58</div>
+        <div class="system-info">arch=x86_64 platform=efi secure_boot=enabled kvm=active</div>
+      </div>
+
+      <div class="boot-log info" style="animation-delay: 0.5s">Loading kernel modules...</div>
+      <div class="boot-log success" style="animation-delay: 1s">CPU: AMD Ryzen 9 7950X detected at 5.7 GHz</div>
+      <div class="boot-log success" style="animation-delay: 1.5s">Memory: 64GB DDR5-6000 CL30 initialized</div>
+
+      <div class="memory-check">
+        <div class="boot-log info" style="animation-delay: 2s">Running memory diagnostic...</div>
+        <script>
+          for (let i = 0; i < 100; i++) {
+            const block = document.createElement('div');
+            block.className = 'memory-block';
+            block.style.animationDelay = (2 + i * 0.02) + 's';
+            document.write(block.outerHTML);
+          }
+        </script>
+      </div>
+
+      <div class="boot-log success" style="animation-delay: 3s">Initializing PCI devices...</div>
+      <div class="boot-log success" style="animation-delay: 3.2s">Loading system drivers: robio.sh, doxing.fun, doxi.ng</div>
+      <div class="boot-log warning" style="animation-delay: 3.4s">ACPI: Temperature threshold warning (CPU: 75°C)</div>
+      <div class="boot-log info" style="animation-delay: 3.6s">Starting system services [1/3]...</div>
+
+      <div class="progress">
+        <div class="progress-bar"></div>
+      </div>
+
+      <div class="status">SYSTEM READY</div>
+      <div class="click-prompt">click to continue</div>
+    </div>
+  </div>
+
+  <div id="click-text"></div>
+
+  <div id="content-wrapper" style="display: none; filter: blur(5px);">
+    <div id="logo">
+      <img src="images/angel.png" alt="Logo">
+      <div id="logo-text">robio.sh</div>
+    </div>
+
+    <div id="main-content">
+      <div id="names-list">
+        <div class="profile-name" data-name="motori">opsecopsecopsecopsecopsec</div>
+        <div class="profile-name" data-name="hardline">rrobioo</div>
+      </div>
+
+      <div id="profile-display">
+        <img id="profile-pic" src="#" alt="Profile">
+        <p id="profile-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <button id="player-toggle">MUSIC</button>
+
+  <div id="audio-player">
+    <div class="title-bar">
+      <span>ROBIO.SH Media Player</span>
+      <div class="close-button">×</div>
+    </div>
+    <div class="controls">
+      <button id="prev-btn">⏮</button>
+      <button id="play-btn">▶</button>
+      <button id="next-btn">⏭</button>
+      <button id="shuffle-btn">⤮</button>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill"></div>
+    </div>
+    <div class="song-list"></div>
+  </div>
+
+  <audio id="music"></audio>
+
+  <script src="js/glitch.js"></script>
+  <script src="js/boot.js"></script>
+  <script src="js/members.js"></script>
+  <script src="js/audioplayer.js"></script>
+  <script src="js/highlight.js"></script>
+  <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
+</body>
+
+</html>
