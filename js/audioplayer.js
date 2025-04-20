@@ -10,8 +10,8 @@ const closeButton = document.querySelector('.close-button');
 const playerToggle = document.getElementById('player-toggle');
 
 const songs = [
-  'Pain.mp3',
   'Bleed.mp3',
+  'Pain.mp3',
   'Грезы.mp3',
   'Грустная сука.mp3',
   'Зеркало.mp3',
