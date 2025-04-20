@@ -64,7 +64,7 @@ function shuffleArray(array) {
 
 window.initAudioPlayer = function() {
   playerToggle.style.display = 'block';
-  music.src = 'media/Pain.mp3';
+  music.src = 'media/Bleed.mp3';
   music.volume = 0.3;
   music.play();
   currentSongIndex = 0;
